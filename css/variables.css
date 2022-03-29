@@ -1,6 +1,7 @@
 /* Color variables */
 :root {
 	/*basic colors*/
+  --basic-black: #000000;
 	--basic-white: #FFFFFF;
 	--extra-white: #FEFEFE;
 	--dark-white: #F8F7F4;
@@ -9,6 +10,7 @@
 	/*text*/
 	--text-light: #FFFFFF;
 	--text-dark: #323232;
+  --text-gray: #ABABAB;
 	--text-gray-dark: #5A5A5A;
 	--text-gray-light: #999999;
 
