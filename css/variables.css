@@ -1,0 +1,30 @@
+/* Color variables */
+:root {
+	/*basic colors*/
+	--basic-white: #FFFFFF;
+	--extra-white: #FEFEFE;
+	--dark-white: #F8F7F4;
+	--background--gray: #9D8B84;
+
+	/*text*/
+	--text-light: #FFFFFF;
+	--text-dark: #323232;
+	--text-gray-dark: #5A5A5A;
+	--text-gray-light: #999999;
+
+	/*background*/
+	--gray-theme: #8996A6;
+	--green-theme: #849D8F;
+	--brown-theme: #9D8B84;
+
+	/*button*/
+	--red-linear-gradient: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+	--red-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+
+	/*underline*/
+	--transparent-gray-light: rgba(255, 255, 255, 0.2);
+	--transparent-gray-dark: rgba(50, 50, 50, 0.2);
+
+	/*popup*/
+	--popup-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+}

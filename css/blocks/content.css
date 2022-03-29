@@ -1,0 +1,36 @@
+/* grid lauout */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 40px;
+}
+
+.content__bunners{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.content__slider {
+  grid-column: 1/-1;;
+}
+
+.content__bunners {
+  grid-column: 1/-1;;
+}
+
+.content__products {
+  grid-column: 1/-1;;
+}
+
+.content__features {
+  grid-column: 1/-1;;
+}
+
+.content__contacts {
+  grid-column: 1/-1;;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

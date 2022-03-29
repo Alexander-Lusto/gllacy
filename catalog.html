@@ -11,109 +11,102 @@
 		<link rel="manifest" href="manisfest.webmanifest">
   </head>
   <body class="page">
-		<header class="page__header header">
-			<nav class="header__navigation">
-				 <a class="header__navigation-logo" href="index.html">
-					 <img src="img/icons/Logo.svg" width="154" height="64" alt="Gllacy логотип">
-				 </a>
-				 <ul class="header__navigation-list">
-					 <li class="header__navigation-item">
-						 <a class="header__navigation-link header__navigation-link--active" href="#">Каталог</a>
-					 </li>
-					 <li class="header__navigation-item">
-						 <a class="header__navigation-link" href="#">Доставка и оплата</a>
-					 </li>
-					 <li class="header__navigation-item">
-						 <a class="header__navigation-link" href="#">О компании</a>
-					 </li>
-				 </ul>
-				 <div class="header__catalog">
-					 <ul class="header__catalog-options-list">
-						 <li class="header__catalog-option-item">
-							 <a class="header__catalog-option-link" href="#">Новинки</a>
-						 </li>
-					 </ul>
-					 <ul class="header__catalog-list">
-						 <li class="header__catalog-item">
-							 <a class="header__catalog-link" href="#">Сливочное</a>
-						 </li>
-						 <li class="header__catalog-item">
-							 <a class="header__catalog-link" href="#">Щербеты</a>
-						 </li>
-						 <li class="header__catalog-item">
-							 <a class="header__catalog-link" href="#">Фруктовый лёд</a>
-						 </li>
-						 <li class="header__catalog-item">
-							 <a class="header__catalog-link" href="#">Мелорин</a>
-						 </li>
-					 </ul>
-				 </div>
-		 </nav>
-
-		 <nav class="header__user-interface">
-			 <ul class="header__user-interface-list">
-				 <li class="header__user-interface-item">
-					 <a class="header__user-interface-button user-interface-button user-interface-button--search" href="#">
-						 <img class="user-interface-button__icon" src="img/icons/magnifying-glass.svg" width="16" height="16" alt="">
-						 <span class="user-interface-button__text visually-hidden">Поиск</span>
-					 </a>
-				 </li>
-			 </ul>
-			 <ul class="header__user-interface-list">
-				 <li class="header__user-interface-item">
-					 <a class="header__user-interface-button user-interface-button" href="#">
-						 <img class="user-interface-button__icon" src="img/icons/log-in.svg" width="20" height="19" alt="">
-						 <span class="user-interface-button__text">Вход</span>
-					 </a>
-				 </li>
-			 </ul>
-			 <ul class="header__user-interface-list">
-				 <li class="header__user-interface-item">
-					 <a class="header__user-interface-button user-interface-button" href="#">
-						 <img class="user-interface-button__icon" src="img/icons/cart.svg" width="20" height="19" alt="">
-						 <span class="user-interface-button__text">2 товара</span>
-					 </a>
-				 </li>
-			 </ul>
-			 <p class="header__info">
-				 <span class="header__info-worktime">С 10 до 20, ежедневно</span><br>
-				 <a class="header__phone-link" href="tel:88124502525">8 812 450-25-25</a>
-			 </p>
-		 </nav>
-
-		 <div class="header__login-popup login-popup">
-			 <form class="login-popup__form">
-				 <input class="login-popup__input input" type="text" placeholder="email@example.com">
-				 <input class="login-popup__input input" type="text" placeholder="••••••••">
-				 <button class="login-poup__button button" type="submit">Войти</button>
-				 <span class="login-popup__link-container">
-					 <a class="login-popup__reset-pass login-popup__link">Забыли пароль?</a><br>
-					 <a class="login-popup__sign-up login-popup__link">Новая регистрация</a>
-				 </span>
-			 </form>
-		 </div>
-
-		 <div class="header__search-form search-form">
-			 <form class="search-form__form">
-				 <input class="search-form__input input" type="text" placeholder="Крем брюле">
-			 </form>
-		 </div>
-	 	</header>
-		<main class="page__content content">
-			<nav class="breadcrumbs">
-				<ul class="breadcrumbs__list">
-					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="index.html">Главная</a>
-					</li>
-					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="catalog.html">Каталог</a>
-					</li>
-					<li class="breadcrumbs__item breadcrumbs__item--last">
-						<a class="breadcrumbs__link" href="index.html">Сливочное</a>
-					</li>
-				</ul>
-			</nav>
-			<h1 class="page__title">Сливочное мороженое</h1>
+		<header class="header page__header">
+      <nav class="header__navigation">
+         <a class="header__navigation-logo">
+           <img src="img/icons/Logo.svg" width="154" height="64" alt="Gllacy логотип">
+         </a>
+         <ul class="header__navigation-list">
+           <li class="header__navigation-item">
+             <a class="header__navigation-link" href="catalog.html">Каталог</a>
+             <div class="header__catalog visually-hidden">
+               <ul class="header__catalog-options-list">
+                 <li class="header__catalog-option-item">
+                   <a class="header__catalog-option-link" href="#">Новинки</a>
+                 </li>
+               </ul>
+               <ul class="header__catalog-list">
+                 <li class="header__catalog-item">
+                   <a class="header__catalog-link" href="#">Сливочное</a>
+                 </li>
+                 <li class="header__catalog-item">
+                   <a class="header__catalog-link" href="#">Щербеты</a>
+                 </li>
+                 <li class="header__catalog-item">
+                   <a class="header__catalog-link" href="#">Фруктовый лёд</a>
+                 </li>
+                 <li class="header__catalog-item">
+                   <a class="header__catalog-link" href="#">Мелорин</a>
+                 </li>
+               </ul>
+             </div>
+           </li>
+           <li class="header__navigation-item">
+             <a class="header__navigation-link" href="catalog.html">Доставка и оплата</a>
+           </li>
+           <li class="header__navigation-item">
+             <a class="header__navigation-link" href="catalog.html">О компании</a>
+           </li>
+         </ul>
+     </nav>
+     <nav class="header__user-interface">
+       <ul class="header__user-interface-list">
+         <li class="header__user-interface-item">
+           <a class="header__user-interface-button user-interface-button user-interface-button--search" href="#">
+             <img class="user-interface-button__icon" src="img/icons/magnifying-glass.svg" width="16" height="16" alt="">
+             <span class="user-interface-button__text visually-hidden">Поиск</span>
+           </a>
+         </li>
+         <li class="header__user-interface-item">
+           <a class="header__user-interface-button user-interface-button" href="#">
+             <img class="user-interface-button__icon" src="img/icons/log-in.svg" width="20" height="19" alt="">
+             <span class="user-interface-button__text">Вход</span>
+           </a>
+         </li>
+         <li class="header__user-interface-item">
+           <a class="header__user-interface-button user-interface-button" href="#">
+             <img class="user-interface-button__icon" src="img/icons/cart.svg" width="20" height="19" alt="">
+             <span class="user-interface-button__text">Пусто</span>
+           </a>
+         </li>
+       </ul>
+       <div class="header__login-popup login-popup visually-hidden">
+         <form class="login-popup__form">
+           <input class="login-popup__input input" type="text" placeholder="email@example.com">
+           <input class="login-popup__input input" type="text" placeholder="••••••••">
+           <button class="login-poup__button button" type="submit">Войти</button>
+           <span class="login-popup__link-container">
+             <a class="login-popup__reset-pass login-popup__link">Забыли пароль?</a><br>
+             <a class="login-popup__sign-up login-popup__link">Новая регистрация</a>
+           </span>
+         </form>
+       </div>
+       <div class="header__search-form search-form visually-hidden">
+         <form class="search-form__form">
+           <input class="search-form__input input" type="text" placeholder="Крем брюле">
+         </form>
+       </div>
+     </nav>
+     <nav class="header__breadcrumbs breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--last">
+          <a class="breadcrumbs__link" href="index.html">Сливочное</a>
+        </li>
+      </ul>
+     </nav>
+     <p class="header__info">
+       <span class="header__info-worktime">С 10 до 20, ежедневно</span><br>
+       <a class="header__phone-link" href="tel:88124502525">8 812 450-25-25</a>
+     </p>
+    </header>
+		<main class="catalog">
+			<h1 class="catalog__title">Сливочное мороженое</h1>
 
 			<section class="filter">
 				<form class="filter__form">
@@ -358,79 +351,77 @@
 						</a>
 					</li>
 				</ul>
-				<ul class="products__navigation-list">
-					<li class="products__navigation-item products__navigation-item--backward">
-						<img src="img/icons/icon-left-small.svg" width="7" height="12" alt="backward button">
-					</li>
-					<li class="products__navigation-item products__navigation-item--active">1</li>
-					<li class="products__navigation-item">2</li>
-					<li class="products__navigation-item">3</li>
-					<li class="products__navigation-item">4</li>
-					<li class="products__navigation-item">5</li>
-					<li class="products__navigation-item products__navigation-item--forward">
-						<img src="img/icons/icon-right-small.svg" width="7" height="12" alt="forward button">
-					</li>
-				</ul>
+        <div class="products__pagination">
+          <ul class="products__pagination-list">
+            <li class="products__pagination-item products__pagination-item--backward products__pagination-item--disabled">
+              <img src="img/icons/icon-left-small.svg" width="7" height="12" alt="backward button">
+            </li>
+            <li class="products__pagination-item products__navigation-item--active">1</li>
+            <li class="products__pagination-item">2</li>
+            <li class="products__pagination-item">3</li>
+            <li class="products__pagination-item">4</li>
+            <li class="products__pagination-item">5</li>
+            <li class="products__pagination-item products__pagination-item--forward">
+              <img src="img/icons/icon-right-small.svg" width="7" height="12" alt="forward button">
+            </li>
+          </ul>
+        </div>
+
 			</section>
 		</main>
-		<footer class="footer">
-			<ul class="footer__social">
+		<footer class="footer page__footer">
+      <ul class="footer__social">
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/facebook.svg" width="32" height="32" alt="facebook">
+          </a>
+        </li>
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/vkontakte.svg" width="32" height="32" alt="vkontakte">
+          </a>
+        </li>
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/instagram.svg" width="32" height="32" alt="instagram">
+          </a>
+        </li>
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/twitter.svg" width="32" height="32" alt="twitter">
+          </a>
+        </li>
+      </ul>
 
-				<li class="footer__social-item social-item">
-					<a class="footer__social-link" href="#">
-						<img class="footer__social-image" src="img/social/twitter.svg" width="32" height="32" alt="twitter">
-					</a>
-				</li>
+      <ul class="footer__links">
+        <li class="footer__links-item footer__links-item--first">
+          <a class="footer__link" href="#">
+            Для поставщиков
+          </a>
+        </li>
+        <li class="footer__links-item">
+          <a class="footer__link" href="#">
+            О производстве
+          </a>
+        </li>
+        <li class="footer__links-item">
+          <a class="footer__link" href="#">
+            Наши документы
+          </a>
+        </li>
+        <li class="footer__links-item">
+          <a class="footer__link" href="#">
+            Экологические стандарты
+          </a>
+        </li>
+      </ul>
 
-				<li class="footer__social-item social-item">
-					<a class="footer__social-link" href="#">
-						<img class="footer__social-image" src="img/social/instagram.svg" width="32" height="32" alt="instagram">
-					</a>
-				</li>
-
-				<li class="footer__social-item social-item">
-					<a class="footer__social-link" href="#">
-						<img class="footer__social-image" src="img/social/facebook.svg" width="32" height="32" alt="facebook">
-					</a>
-				</li>
-
-				<li class="footer__social-item social-item">
-					<a class="footer__social-link" href="#">
-						<img class="footer__social-image" src="img/social/vkontakte.svg" width="32" height="32" alt="vkontakte">
-					</a>
-				</li>
-
-			</ul>
-
-			<ul class="footer__links">
-				<li class="footer__links-item footer__links-item--first">
-					<a class="footer__link" href="#">
-						Для поставщиков
-					</a>
-				</li>
-				<li class="footer__links-item">
-					<a class="footer__link" href="#">
-						О производстве
-					</a>
-				</li>
-				<li class="footer__links-item">
-					<a class="footer__link" href="#">
-						Наши документы
-					</a>
-				</li>
-				<li class="footer__links-item">
-					<a class="footer__link" href="#">
-						Экологические стандарты
-					</a>
-				</li>
-			</ul>
-
-			<div class="footer__creator">
-				<img class="footer__creator-logo" src="img/icons/logo-htmlacademy-small.svg" width="124" height="39" alt="Логотип HTML Academy">
-				<p class="footer__creator-info">
-					Сделано в HTML Academy © 2019
-				</p>
-			</div>
-		</footer>
+      <div class="footer__creator">
+        <img class="footer__creator-logo" src="img/icons/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <p class="footer__creator-info">
+          Сделано в HTML Academy © 2019
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,87 @@
+/* products*/
+.product {
+	color: var(--text-light);
+	font-family: 'Roboto';
+	font-style: normal;
+
+	position: relative;
+}
+
+.product__link {
+	text-decoration: none;
+	color:  inherit;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.product__price {
+	position: absolute;
+	bottom: 20px;
+
+
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 45px;
+
+	margin: 0 auto;
+}
+
+.product__price-small {
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.product__image-container {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.product__desc {
+	text-align: center;
+	min-height: 45px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.product__desc span {
+	border-bottom: 1px solid var(--transparent-gray-light);
+}
+
+.product--hit:before {
+	content: "";
+
+	position: absolute;
+	width: 61px;
+	height: 61px;
+	background-image: url(../img/hits/hit-circle.png);
+	z-index: 1;
+}
+
+.product:hover {
+	background-color: var(--transparent-gray-light);
+	border-radius: 3px;
+}
+
+.product:hover .product__button-container{
+	visibility: visible;
+}
+
+.product__button-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	position: absolute;
+	left: 0;
+	visibility: hidden;
+	z-index: 1;
+
+	background-color: var(--transparent-gray-light);
+	border-radius: 3px;
+}
+
+.product__button {
+	margin-bottom: 20px;
+}
