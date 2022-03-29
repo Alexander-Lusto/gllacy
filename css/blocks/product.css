@@ -55,7 +55,7 @@
 	position: absolute;
 	width: 61px;
 	height: 61px;
-	background-image: url(../img/hits/hit-circle.png);
+	background-image: url(../../img/hits/hit-circle.png);
 	z-index: 1;
 }
 

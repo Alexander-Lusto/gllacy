@@ -56,3 +56,7 @@
 .products__pagination-item--disabled {
   cursor: auto;
 }
+
+.products__list--hits {
+  margin-bottom: 0;
+}

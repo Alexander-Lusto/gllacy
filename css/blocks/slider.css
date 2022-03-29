@@ -27,7 +27,7 @@
   z-index: -1;
 
 
-  background-image: url(../img/promo/ice-cream-1-left.png), url(../img/promo/ice-cream-1-right.png), url(../img/promo/backlight_new_1.png);
+  background-image: url(../../img/promo/ice-cream-1-left.png), url(../../img/promo/ice-cream-1-right.png), url(../../img/promo/backlight_new_1.png);
   background-repeat: no-repeat;
   background-size: 372px 584px, auto, 750px 750px;
   background-position: top 190px left 530px , top 260px right 490px, top 75px center;
