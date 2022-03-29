@@ -11,113 +11,108 @@
 			<link rel="manifest" href="manisfest.webmanifest">
    </head>
    <body class="page">
-		<header class="page__header header">
+		<header class="header page__header">
 		 	<nav class="header__navigation">
 					<a class="header__navigation-logo">
 						<img src="img/icons/Logo.svg" width="154" height="64" alt="Gllacy логотип">
 					</a>
 					<ul class="header__navigation-list">
 						<li class="header__navigation-item">
-							<a class="header__navigation-link" href="#">Каталог</a>
+							<a class="header__navigation-link" href="catalog.html">Каталог</a>
+              <div class="header__catalog visually-hidden">
+                <ul class="header__catalog-options-list">
+                  <li class="header__catalog-option-item">
+                    <a class="header__catalog-option-link" href="#">Новинки</a>
+                  </li>
+                </ul>
+                <ul class="header__catalog-list">
+                  <li class="header__catalog-item">
+                    <a class="header__catalog-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="header__catalog-item">
+                    <a class="header__catalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="header__catalog-item">
+                    <a class="header__catalog-link" href="#">Фруктовый лёд</a>
+                  </li>
+                  <li class="header__catalog-item">
+                    <a class="header__catalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
 						</li>
 						<li class="header__navigation-item">
-							<a class="header__navigation-link" href="#">Доставка и оплата</a>
+							<a class="header__navigation-link" href="catalog.html">Доставка и оплата</a>
 						</li>
 						<li class="header__navigation-item">
-							<a class="header__navigation-link" href="#">О компании</a>
+							<a class="header__navigation-link" href="catalog.html">О компании</a>
 						</li>
 					</ul>
-					<div class="header__catalog">
-						<ul class="header__catalog-options-list">
-							<li class="header__catalog-option-item">
-								<a class="header__catalog-option-link" href="#">Новинки</a>
-							</li>
-						</ul>
-						<ul class="header__catalog-list">
-							<li class="header__catalog-item">
-								<a class="header__catalog-link" href="#">Сливочное</a>
-							</li>
-							<li class="header__catalog-item">
-								<a class="header__catalog-link" href="#">Щербеты</a>
-							</li>
-							<li class="header__catalog-item">
-								<a class="header__catalog-link" href="#">Фруктовый лёд</a>
-							</li>
-							<li class="header__catalog-item">
-								<a class="header__catalog-link" href="#">Мелорин</a>
-							</li>
-						</ul>
-					</div>
 			</nav>
-
-			<nav class="header__user-interface">
-				<ul class="header__user-interface-list">
-					<li class="header__user-interface-item">
-						<a class="header__user-interface-button user-interface-button user-interface-button--search" href="#">
-							<img class="user-interface-button__icon" src="img/icons/magnifying-glass.svg" width="16" height="16" alt="">
-							<span class="user-interface-button__text visually-hidden">Поиск</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="header__user-interface-list">
-					<li class="header__user-interface-item">
-						<a class="header__user-interface-button user-interface-button" href="#">
-							<img class="user-interface-button__icon" src="img/icons/log-in.svg" width="20" height="19" alt="">
-							<span class="user-interface-button__text">Вход</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="header__user-interface-list">
-					<li class="header__user-interface-item">
-						<a class="header__user-interface-button user-interface-button" href="#">
-							<img class="user-interface-button__icon" src="img/icons/cart.svg" width="20" height="19" alt="">
-							<span class="user-interface-button__text">Пусто</span>
-						</a>
-					</li>
-				</ul>
-				<p class="header__info">
-					<span class="header__info-worktime">С 10 до 20, ежедневно</span><br>
-					<a class="header__phone-link" href="tel:88124502525">8 812 450-25-25</a>
-				</p>
-			</nav>
-
-			<div class="header__login-popup login-popup">
-				<form class="login-popup__form">
-					<input class="login-popup__input input" type="text" placeholder="email@example.com">
-					<input class="login-popup__input input" type="text" placeholder="••••••••">
-					<button class="login-poup__button button" type="submit">Войти</button>
-					<span class="login-popup__link-container">
-						<a class="login-popup__reset-pass login-popup__link">Забыли пароль?</a><br>
-						<a class="login-popup__sign-up login-popup__link">Новая регистрация</a>
-					</span>
-				</form>
-			</div>
-
-			<div class="header__search-form search-form">
-				<form class="search-form__form">
-					<input class="search-form__input input" type="text" placeholder="Крем брюле">
-				</form>
-			</div>
+      <nav class="header__user-interface">
+        <ul class="header__user-interface-list">
+          <li class="header__user-interface-item">
+            <a class="header__user-interface-button user-interface-button user-interface-button--search" href="#">
+              <img class="user-interface-button__icon" src="img/icons/magnifying-glass.svg" width="16" height="16" alt="">
+              <span class="user-interface-button__text visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="header__user-interface-item">
+            <a class="header__user-interface-button user-interface-button" href="#">
+              <img class="user-interface-button__icon" src="img/icons/log-in.svg" width="20" height="19" alt="">
+              <span class="user-interface-button__text">Вход</span>
+            </a>
+          </li>
+          <li class="header__user-interface-item">
+            <a class="header__user-interface-button user-interface-button" href="#">
+              <img class="user-interface-button__icon" src="img/icons/cart.svg" width="20" height="19" alt="">
+              <span class="user-interface-button__text">Пусто</span>
+            </a>
+          </li>
+        </ul>
+        <div class="header__login-popup login-popup visually-hidden">
+          <form class="login-popup__form">
+            <input class="login-popup__input input" type="text" placeholder="email@example.com">
+            <input class="login-popup__input input" type="text" placeholder="••••••••">
+            <button class="login-poup__button button" type="submit">Войти</button>
+            <span class="login-popup__link-container">
+              <a class="login-popup__reset-pass login-popup__link">Забыли пароль?</a><br>
+              <a class="login-popup__sign-up login-popup__link">Новая регистрация</a>
+            </span>
+          </form>
+        </div>
+        <div class="header__search-form search-form visually-hidden">
+          <form class="search-form__form">
+            <input class="search-form__input input" type="text" placeholder="Крем брюле">
+          </form>
+        </div>
+      </nav>
+      <p class="header__info">
+        <span class="header__info-worktime">С 10 до 20, ежедневно</span><br>
+        <a class="header__phone-link" href="tel:88124502525">8 812 450-25-25</a>
+      </p>
 		</header>
 		<main class="page__content content">
 			<h1 class="content__title visually-hidden">Магазин мороженного Глейси</h1>
 
-			<section class="slider page__slider">
+			<section class="slider page__slider content__slider">
 				<h2 class="slider__title visually-hidden">Предложения</h2>
-				<div class="slider__option-1 visually-hidden">
+				<div class="slider__option-1 ">
+          <div class="slider__picture"></div>
 					<p class="slider__desc">Крем-брюле и пломбир<br> с малиновым джемом</p>
 				</div>
 				<div class="slider__option-2 visually-hidden">
 					<p class="slider__desc">Шоколадный пломбир<br> и лимонный сорбет</p>
 				</div>
-				<div class="slider__option-3">
+				<div class="slider__option-3 visually-hidden">
+
 					<p class="slider__desc">Пломбир с помадкой<br> и клубничный щербет</p>
 				</div>
 				<span class="slider__controls"></span>
 				<a class="slider__button button button--big" href="#"> Давайте оба!</a>
 			</section>
 
-			<section class="bunners">
+			<section class="bunners content__bunners">
 				<h2 class="bunners__title visually-hidden">Акции</h2>
 				<div class="bunner bunner--raspberry">
 					<h3 class="bunner__title">Малинка даром!</h3>
@@ -135,11 +130,11 @@
 				</div>
 			</section>
 
-			<section class="products">
+			<section class="products content__products">
 				<h2 class="products__title visually-hidden">Хиты</h2>
 				<ul class="products__list">
 					<li class="products__list-item product product--hit">
-						<a class="product__link" href="product.html">
+						<a class="product__link" href="product_1.html">
 							<div class="product__image-container">
 								<img class="product__image" src="img/products/1.png" width="267" height="267" alt="Мороженное">
 								<p class="product__price">310 ₽<span class="product__price-small">/кг</span></p>
@@ -147,12 +142,14 @@
 							<p class="product__desc">
 								<span>Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</span>
 							</p>
-							<button class="product__button button visually-hidden">Быстрый просмотр</button>
+							<div class="product__button-container">
+								<button class="product__button button">Быстрый просмотр</button>
+							</div>
 						</a>
 					</li>
 
 					<li class="products__list-item product product--hit">
-						<a class="product__link" href="product.html">
+						<a class="product__link" href="product_2.html">
 							<div class="product__image-container">
 								<img class="product__image" src="img/products/2.png" width="267" height="267" alt="Мороженное">
 								<p class="product__price">380 ₽<span class="product__price-small">/кг</span></p>
@@ -160,12 +157,14 @@
 							<p class="product__desc">
 								<span>Сливочно-кофейное с кусочками<br> шоколада</span>
 							</p>
-							<button class="product__button button visually-hidden">Быстрый просмотр</button>
+							<div class="product__button-container">
+								<button class="product__button button">Быстрый просмотр</button>
+							</div>
 						</a>
 					</li>
 
 					<li class="products__list-item product product--hit">
-						<a class="product__link" href="product.html">
+						<a class="product__link" href="product_3.html">
 							<div class="product__image-container">
 								<img class="product__image" src="img/products/3.png" width="267" height="267" alt="Мороженное">
 								<p class="product__price">355 ₽<span class="product__price-small">/кг</span></p>
@@ -173,12 +172,14 @@
 							<p class="product__desc">
 								<span>Сливочно-клубничное с<br> присыпкой из белого шоколада</span>
 							</p>
-							<button class="product__button button visually-hidden">Быстрый просмотр</button>
+							<div class="product__button-container">
+								<button class="product__button button">Быстрый просмотр</button>
+							</div>
 						</a>
 					</li>
 
 					<li class="products__list-item product product--hit">
-						<a class="product__link" href="product.html">
+						<a class="product__link" href="product_4.html">
 							<div class="product__image-container">
 								<img class="product__image" src="img/products/4.png" width="267" height="267" alt="Мороженное">
 								<p class="product__price">415 ₽<span class="product__price-small">/кг</span></p>
@@ -186,13 +187,15 @@
 							<p class="product__desc">
 								<span>Сливочное крем-брюле с<br> карамельной подливкой</span>
 							</p>
-							<button class="product__button button visually-hidden">Быстрый просмотр</button>
+							<div class="product__button-container">
+								<button class="product__button button">Быстрый просмотр</button>
+							</div>
 						</a>
 					</li>
 				</ul>
 			</section>
 
-			<section class="features">
+			<section class="features content__features">
 				<h2 class="features__title visually-hidden"> Наши преимущества</h2>
 				<p class="features__desc">
 					Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
@@ -228,7 +231,7 @@
 				</ul>
 			</section>
 
-			<section class="blog">
+			<section class="blog content__blog">
 				<h2 class="blog__title visually-hidden">Блог</h2>
 				<h3 class="blog__subtitle">Новое в нашем блоге</h3>
 				<p class="blog__desc">
@@ -238,7 +241,7 @@
 				</p>
 			</section>
 
-			<section class="mail">
+			<section class="mail content__mail">
 				<h2 class="mail__title visually-hidden">Рассылка</h2>
 				<div class="mail__inner-container">
 					<p class="mail__desc">
@@ -251,7 +254,7 @@
 				</div>
 			</section>
 
-			<section class="contacts">
+			<section class="contacts content__contacts">
 				<h2 class="contacts__title visually-hidden">Контакты</h2>
 				<div class="contacts__info">
 					<p class="contacts__adress">
@@ -271,67 +274,7 @@
 				</div>
 			</section>
 
-			<footer class="footer">
-				<ul class="footer__social">
-
-					<li class="footer__social-item social-item">
-						<a class="footer__social-link" href="#">
-							<img class="footer__social-image" src="img/social/twitter.svg" width="32" height="32" alt="twitter">
-						</a>
-					</li>
-
-					<li class="footer__social-item social-item">
-						<a class="footer__social-link" href="#">
-							<img class="footer__social-image" src="img/social/instagram.svg" width="32" height="32" alt="instagram">
-						</a>
-					</li>
-
-					<li class="footer__social-item social-item">
-						<a class="footer__social-link" href="#">
-							<img class="footer__social-image" src="img/social/facebook.svg" width="32" height="32" alt="facebook">
-						</a>
-					</li>
-
-					<li class="footer__social-item social-item">
-						<a class="footer__social-link" href="#">
-							<img class="footer__social-image" src="img/social/vkontakte.svg" width="32" height="32" alt="vkontakte">
-						</a>
-					</li>
-
-				</ul>
-
-				<ul class="footer__links">
-					<li class="footer__links-item footer__links-item--first">
-						<a class="footer__link" href="#">
-							Для поставщиков
-						</a>
-					</li>
-					<li class="footer__links-item">
-						<a class="footer__link" href="#">
-							О производстве
-						</a>
-					</li>
-					<li class="footer__links-item">
-						<a class="footer__link" href="#">
-							Наши документы
-						</a>
-					</li>
-					<li class="footer__links-item">
-						<a class="footer__link" href="#">
-							Экологические стандарты
-						</a>
-					</li>
-				</ul>
-
-				<div class="footer__creator">
-					<img class="footer__creator-logo" src="img/icons/logo-htmlacademy-small.svg" width="124" height="39" alt="Логотип HTML Academy">
-					<p class="footer__creator-info">
-						Сделано в HTML Academy © 2019
-					</p>
-				</div>
-			</footer>
-
-			<section class="feedback">
+			<section class="feedback visually-hidden">
 				<h2 class="feedback__title"> Мы обязательно вам ответим!</h2>
 				<span class="feeedback__close-button"></span>
 				<form class="feedback__form">
@@ -342,7 +285,61 @@
 						<button class="feedback__button button" type="submit">Отправить</button>
 					</div>
 				</form>
-			</section>`
+			</section>
 		</main>
+    <footer class="footer page__footer">
+      <ul class="footer__social">
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/facebook.svg" width="32" height="32" alt="facebook">
+          </a>
+        </li>
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/vkontakte.svg" width="32" height="32" alt="vkontakte">
+          </a>
+        </li>
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/instagram.svg" width="32" height="32" alt="instagram">
+          </a>
+        </li>
+        <li class="footer__social-item social-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-image" src="img/social/twitter.svg" width="32" height="32" alt="twitter">
+          </a>
+        </li>
+      </ul>
+
+      <ul class="footer__links">
+        <li class="footer__links-item footer__links-item--first">
+          <a class="footer__link" href="#">
+            Для поставщиков
+          </a>
+        </li>
+        <li class="footer__links-item">
+          <a class="footer__link" href="#">
+            О производстве
+          </a>
+        </li>
+        <li class="footer__links-item">
+          <a class="footer__link" href="#">
+            Наши документы
+          </a>
+        </li>
+        <li class="footer__links-item">
+          <a class="footer__link" href="#">
+            Экологические стандарты
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer__creator">
+        <img class="footer__creator-logo" src="img/icons/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <p class="footer__creator-info">
+          Сделано в HTML Academy © 2019
+        </p>
+      </div>
+    </footer>
    </body>
 </html>
