@@ -1,0 +1,57 @@
+/* contacts */
+
+.contacts {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+
+	height: 430px;
+	width: 100%;
+	padding: 0 27px;
+  margin-left: -27px;
+	background-image:  url(../img/icons/pin.svg), url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: top 140px left 265px, center center;
+}
+
+.contacts__info {
+	background-color: var(--extra-white);
+	border-radius: 16px;
+
+	padding: 30px 25px;
+	width: 306px;
+}
+
+.contacts__adress {
+  margin: 0;
+	margin-bottom: 30px;
+}
+
+.contacts__adress strong {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.contacts__phone {
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.contacts__adress strong {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.contacts__button {
+	width: 100%;
+}
+
+.contacts__phone strong {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+}

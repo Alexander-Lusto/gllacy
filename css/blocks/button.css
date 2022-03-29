@@ -1,0 +1,27 @@
+/*button*/
+.button {
+	border: 0;
+	text-decoration: none;
+	color: var(--text-light);
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 12px 22.4px;
+
+	background: var(--red-linear-gradient);
+	box-shadow: var(--red-shadow);
+	border-radius: 70px;
+
+	cursor: pointer;
+}
+
+.button--big {
+	font-size: 32px;
+	line-height: 44px;
+	letter-spacing: 0.05em;
+
+	padding: 9.5px 21.95px;
+}

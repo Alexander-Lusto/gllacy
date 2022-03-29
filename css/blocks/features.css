@@ -1,0 +1,57 @@
+/* features*/
+.features {
+	font-family: 'Roboto';
+	font-style: normal;
+
+	border-radius: 10px;
+	background-image: url(../img/waffle.png);
+  background-repeat: no-repeat;
+
+	padding: 21.5px 20px;
+}
+
+.features__desc {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+
+	margin: 0;
+  margin-bottom: 20px;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.features__list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.feature__desc {
+	color: var(--text-dark);
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+
+  margin: 0;
+	margin-left: 6px;
+}
+
+.feature {
+	display: flex;
+}
+
+.feature__icon {
+  position: relative;
+  bottom: 15px;
+}

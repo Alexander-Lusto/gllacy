@@ -1,0 +1,61 @@
+/* feedback */
+.feedback {
+	font-family: 'Roboto';
+	font-style: normal;
+
+	background: var(--dark-white);
+	border-radius: 6px;
+
+	box-sizing: border-box;
+	padding: 20px 25px;
+	width: 477px;
+
+	position: relative;
+}
+
+.feedback__title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.feedback__input {
+	width: 267px;
+	margin-bottom: 20px;
+
+
+	}
+
+.feedback__textarea {
+	width: 100%;
+	min-height: 154px;
+	margin-bottom: 20px;
+}
+
+.feedback__textarea::placeholder,
+.feedback__input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.feedback__button-container{
+	text-align: right;
+}
+
+.feeedback__close-button {
+	display: inline-block;
+	width: 18px;
+	height: 17px;
+
+	background-image: url(../img/icons/Х-big.svg);
+	opacity: 0.18;
+	cursor: pointer;
+
+	position: absolute;
+	right: 16px;
+	top: 15px;
+}

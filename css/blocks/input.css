@@ -1,0 +1,18 @@
+/*input */
+.input {
+	background-color: var(--basic-white);
+	border: 1px solid rgba(178, 178, 178, 0.52);
+
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 11.81px 14px;
+}
+
+.input::placeholder {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--text-gray-light);
+}

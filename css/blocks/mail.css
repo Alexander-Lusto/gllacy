@@ -1,0 +1,49 @@
+* mail */
+.mail {
+	font-family: 'Roboto';
+	font-style: normal;
+
+	background-image: url(../img/mail-background.jpg);
+	border-radius: 16px;
+
+	padding: 5px 6px;
+
+	box-sizing: border-box;
+	width: 560px;
+}
+
+.mail__inner-container {
+	background-color: rgba(248, 247, 244, 1);
+	border-radius: 16px;
+
+	padding: 30px 20px 35px 20px;
+}
+
+.mail__desc {
+	margin: 0;
+	margin-bottom: 47px;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.mail__button {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.mail__form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.mail__input {
+	flex-grow: 1;
+}
+
+.mail__input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
