@@ -108,66 +108,74 @@
 		<main class="catalog">
 			<h1 class="catalog__title">Сливочное мороженое</h1>
 
-			<section class="filter">
-				<form class="filter__form">
-					<fieldset class="filter__type filter__sorting ">
-						<legend class="filter__name">Сортировка:</legend>
-						<select class="filter__sorting-types">
-							<option class="filter__sorting-item" value="1" selected>по популярности</option>
-							<option class="filter__sorting-item" value="2">сначала недорогие</option>
-							<option class="filter__sorting-item" value="3">сначала дорогие</option>
-							<option class="filter__sorting-item" value="4">по жирности</option>
+			<section class="filters">
+				<form class="filters__form">
+					<fieldset class="filters__type filters__sorting ">
+						<legend class="filters__name">Сортировка:</legend>
+						<select class="filters__sorting-types">
+							<option class="filters__sorting-item" value="1" selected>по популярности</option>
+							<option class="filters__sorting-item" value="2">сначала недорогие</option>
+							<option class="filters__sorting-item" value="3">сначала дорогие</option>
+							<option class="filters__sorting-item" value="4">по жирности</option>
 						</select>
 					</fieldset>
 
-					<fieldset class="filter__type filter__price">
-						<legend class="filter__name">Цена:</legend>
-						<div class="filter__inner-container filter__price-range">
-							<span class="filter__price-floor"></span>
-							<span class="filter__price-scale"></span>
-							<span class="filter__price-ceiling"></span>
+					<fieldset class="filters__type filters__price">
+						<legend class="filters__name">Цена:
+              <span class="filters__price-number-min">100</span> ₽
+              -
+              <span class="filters__price-number-max">500</span> ₽
+            </legend>
+
+						<div class="filters__inner-container range-filter">
+							<div class="range-filter__scale">
+                <div class="range-filter__bar"></div>
+              </div>
+							<div class="range-filter__toggle range-filter__toggle-min"></div>
+              <div class="range-filter__toggle range-filter__toggle-max"></div>
 						</div>
 					</fieldset>
 
-					<fieldset class="filter__type filter__fat">
-						<legend class="filter__name">Жирность:</legend>
+					<fieldset class="filters__type filters__fat">
+						<legend class="filters__name">Жирность:</legend>
 
-						<div class="filter__inner-container">
-							<input id="zero" class="filter__fat-option" type="radio" name="fat" value="0%">
-							<label for="zero">0%</label>
+						<div class="filters__inner-container filters__radio">
+							<input id="zero" class="filters__radio-option-input visually-hidden" type="radio" name="fat" value="0%">
+							<label class="filters__radio-option-label" for="zero">0%</label>
 
-							<input id="ten" class="filter__fat-option" type="radio" name="fat" value="0-10%">
-							<label for="ten">до 10%</label>
+							<input id="ten" class="filters__radio-option-input visually-hidden" type="radio" name="fat" value="0-10%" checked>
+							<label class="filters__radio-option-label" for="ten">до 10%</label>
 
-							<input id="thirty" class="filter__fat-option" type="radio" name="fat" value="10-30%">
-							<label for="thirty">до 30%</label>
+							<input id="thirty" class="filters__radio-option-input visually-hidden" type="radio" name="fat" value="10-30%">
+							<label class="filters__radio-option-label" for="thirty">до 30%</label>
 
-							<input id="more" class="filter__fat-option" type="radio" name="fat" value="30%+">
-							<label for="more">выше 30%</label>
+							<input id="more" class="filters__radio-option-input visually-hidden" type="radio" name="fat" value="30%+">
+							<label class="filters__radio-option-label" for="more">выше 30%</label>
 						</div>
 					</fieldset>
 
-					<fieldset class="filter__type filter__topping">
-						<legend class="filter__name">Наполнители:</legend>
-						<div class="filter__inner-container">
-							<input id="chocolate" class="filter__topping-option" type="checkbox" name="topping" value="chocolate">
-							<label for="chocolate">шоколадные</label>
+					<fieldset class="filters__type filters__topping">
+						<legend class="filters__name">Наполнители:</legend>
 
-							<input id="sugar" class="filter__topping-option" type="checkbox" name="topping" value="sugar">
-							<label for="sugar">сахарные присыпки</label>
+						<div class="filters__inner-container filters__checkbox">
+							<input id="chocolate" class="filters__checkbox-option-input visually-hidden" type="checkbox" name="topping" value="chocolate">
+							<label for="chocolate" class="filters__checkbox-option-label">шоколадные</label>
 
-							<input id="fruit" class="filter__topping-option" type="checkbox" name="topping" value="fruit">
-							<label for="fruit">фрукты</label>
+							<input id="sugar" class="filters__checkbox-option-input  visually-hidden" type="checkbox" name="topping" value="sugar">
+							<label for="sugar" class="filters__checkbox-option-label">сахарные присыпки</label>
 
-							<input id="sirup" class="filter__topping-option" type="checkbox" name="topping" value="sirup">
-							<label for="sirup">сиропы</label>
+							<input id="fruit" class="filters__checkbox-option-input  visually-hidden" type="checkbox" name="topping" value="fruit">
+							<label for="fruit" class="filters__checkbox-option-label">фрукты</label>
 
-							<input id="jem" class="filter__topping-option" type="checkbox" name="topping" value="jem">
-							<label for="jem">джемы</label>
+							<input id="sirup" class="filters__checkbox-option-input  visually-hidden" type="checkbox" name="topping" value="sirup">
+							<label for="sirup" class="filters__checkbox-option-label">сиропы</label>
+
+							<input id="jem" class="filters__checkbox-option-input  visually-hidden" type="checkbox" name="topping" value="jem">
+							<label for="jem" class="filters__checkbox-option-label">джемы</label>
 						</div>
 					</fieldset>
 
-					<button class="filter__button button-dark " type="submit">Применить</button>
+					<button class="filters__button button-dark " type="submit">Применить</button>
 				</form>
 			</section>
 
