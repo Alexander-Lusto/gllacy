@@ -194,3 +194,8 @@
   order: 1;
   align-self: flex-end;
 }
+
+.header__info--main {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
