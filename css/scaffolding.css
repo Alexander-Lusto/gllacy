@@ -22,11 +22,6 @@
 	font-style: bold;
 }
 
-body {
-	font-family: Roboto, sans-serif;
-  background-color: var(--gray-theme);
-}
-
 .visually-hidden {
 	position: absolute;
   width: 1px;
@@ -38,13 +33,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.page {
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding: 0 27px;
-  margin: 0 auto;
-
-  outline: 2px solid red;
 }

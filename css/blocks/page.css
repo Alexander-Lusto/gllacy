@@ -1,0 +1,31 @@
+.page {
+  font-family: Roboto, sans-serif;
+
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 27px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+}
+
+.page--brown-theme {
+  background-color: var(--brown-theme);
+  background-image: url(../../img/slides/background_3.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.page--gray-theme {
+  background-color: var(--gray-theme);
+  background-image: url(../../img/slides/background_2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.page--green-theme {
+  background-color: var(--green-theme);
+  background-image: url(../../img/slides/background_1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
