@@ -18,43 +18,51 @@
          </a>
          <ul class="header__navigation-list">
            <li class="header__navigation-item">
-             <a class="header__navigation-link" href="catalog.html">Каталог</a>
-             <div class="header__catalog visually-hidden">
-               <ul class="header__catalog-options-list">
-                 <li class="header__catalog-option-item">
-                   <a class="header__catalog-option-link" href="#">Новинки</a>
-                 </li>
-               </ul>
-               <ul class="header__catalog-list">
-                 <li class="header__catalog-item">
-                   <a class="header__catalog-link" href="#">Сливочное</a>
-                 </li>
-                 <li class="header__catalog-item">
-                   <a class="header__catalog-link" href="#">Щербеты</a>
-                 </li>
-                 <li class="header__catalog-item">
-                   <a class="header__catalog-link" href="#">Фруктовый лёд</a>
-                 </li>
-                 <li class="header__catalog-item">
-                   <a class="header__catalog-link" href="#">Мелорин</a>
-                 </li>
-               </ul>
-             </div>
+              <a class="header__navigation-link header__navigation-link--catalog header__navigation-link--current" href="catalog.html">
+               <span class="header__navigation-text">Каталог</span>
+              </a>
+              <div class="header__catalog-wrapper">
+                <div class="header__catalog">
+                  <ul class="header__catalog-options-list">
+                    <li class="header__catalog-option-item">
+                      <a class="header__catalog-option-link">Новинки</a>
+                    </li>
+                  </ul>
+                  <ul class="header__catalog-list">
+                    <li class="header__catalog-item">
+                      <a class="header__catalog-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <a class="header__catalog-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <a class="header__catalog-link" href="#">Фруктовый лёд</a>
+                    </li>
+                    <li class="header__catalog-item">
+                      <a class="header__catalog-link header__catalog-link--curent" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
            </li>
            <li class="header__navigation-item">
-             <a class="header__navigation-link" href="catalog.html">Доставка и оплата</a>
+             <a class="header__navigation-link" href="#">
+              <span class="header__navigation-text">Доставка и оплата</span>
+            </a>
            </li>
            <li class="header__navigation-item">
-             <a class="header__navigation-link" href="catalog.html">О компании</a>
+             <a class="header__navigation-link" href="#">
+              <span class="header__navigation-text">О компании</span>
+            </a>
            </li>
          </ul>
-     </nav>
+      </nav>
      <nav class="header__user-interface">
        <ul class="header__user-interface-list">
          <li class="header__user-interface-item">
            <a class="header__user-interface-button user-interface-button user-interface-button--search" href="#">
-             <img class="user-interface-button__icon" src="img/icons/magnifying-glass.svg" width="16" height="16" alt="">
-             <span class="user-interface-button__text visually-hidden">Поиск</span>
+              <img class="user-interface-button__icon" src="img/icons/magnifying-glass.svg" width="16" height="16" alt="">
+            <span class="user-interface-button__text visually-hidden">Поиск</span>
            </a>
          </li>
          <li class="header__user-interface-item">
@@ -97,15 +105,15 @@
 
 			<section class="slider content__slider">
 				<h2 class="slider__title visually-hidden">Предложения</h2>
-        <div class="slider__option slider__option-1 visually-hidden">
+        <div class="slider__option slider__option-1">
 					<p class="slider__desc">Крем-брюле и пломбир<br> с малиновым джемом</p>
           <a class="slider__button button button--big" href="#"> Давайте оба!</a>
 				</div>
-        <div class="slider__option slider__option-2 visually-hidden">
+        <div class="slider__option slider__option-2">
 					<p class="slider__desc">Шоколадный пломбир<br> и лимонный сорбет</p>
           <a class="slider__button button button--big" href="#"> Давайте оба!</a>
         </div>
-				<div class="slider__option slider__option-3">
+				<div class="slider__option slider__option-3 slider__option--active">
           <div class="slider__picture"></div>
           <p class="slider__desc">Пломбир с помадкой <br> и клубничный щербет</p>
           <a class="slider__button button button--big" href="#"> Давайте оба!</a>
@@ -340,7 +348,7 @@
       </ul>
 
       <div class="footer__creator">
-        <img class="footer__creator-logo" src="img/icons/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Academy">
+        <img class="footer__creator-logo" src="img/icons/logo-htmlacademy-small.svg" width="115" height="38" alt="Логотип HTML Academy">
         <p class="footer__creator-info">
           Сделано в HTML Academy © 2019
         </p>

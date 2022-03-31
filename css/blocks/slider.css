@@ -26,6 +26,16 @@
 	display: inline-block;
 }
 
+.slider__option{
+  display: none;
+}
+
+
+.slider__option--active {
+  display: block;
+}
+
+
 .slider__controls {
   position: absolute;
   left:0;
@@ -51,3 +61,4 @@
 .slider__control--active {
   background-color: var(--basic-white);
 }
+

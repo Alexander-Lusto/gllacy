@@ -26,6 +26,8 @@
 
 .footer__social-link {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
@@ -40,7 +42,6 @@
   grid-template-columns: max-content max-content;
   grid-column-gap: 30px;
   grid-row-gap: 5px;
-
 }
 
 .footer__creator{
@@ -54,6 +55,7 @@
 
 .footer__social-image {
 	opacity: 0.8;
+  border-radius: 50%;
 }
 
 .footer__link {
