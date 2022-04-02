@@ -1,8 +1,10 @@
 
 @import "scaffolding.css";
 @import "variables.css";
+@import "blocks/page.css";
 @import "blocks/button.css";
 @import "blocks/input.css";
+@import "blocks/link.css";
 @import "blocks/header.css";
 @import "blocks/footer.css";
 @import "blocks/blog.css";
@@ -12,8 +14,8 @@
 @import "blocks/contacts.css";
 @import "blocks/features.css";
 @import "blocks/feedback.css";
-@import "blocks/filter.css";
-@import "blocks/loginpoup.css";
+@import "blocks/filters.css";
+@import "blocks/login-popup.css";
 @import "blocks/mail.css";
 @import "blocks/products.css";
 @import "blocks/product.css";

@@ -1,0 +1,31 @@
+.link {
+	text-decoration: none;
+	font-family: 'Roboto';
+	font-style: normal;
+	color: var(--text-light);
+
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	border-bottom: 1px solid var(--transparent-gray-light);
+}
+
+.link:hover,
+.link:active {
+  color: #FFBC9E;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.link--dark{
+  color: var(--text-dark);
+  font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	border-bottom: 1px solid var(--transparent-gray-dark);
+}
+
+.link--dark:hover,
+.link--dark:active{
+  color: var(--classic-red);
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
+}

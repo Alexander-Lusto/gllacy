@@ -1,19 +1,13 @@
 /* products*/
 .product {
+  position: relative;
+  padding-top: 5px;
+
 	color: var(--text-light);
 	font-family: 'Roboto';
 	font-style: normal;
 
-	position: relative;
-}
-
-.product__link {
-	text-decoration: none;
-	color:  inherit;
-
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 22px;
+  user-select: none;
 }
 
 .product__price {
@@ -34,12 +28,18 @@
 }
 
 .product__image-container {
+  display: flex;
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+
 }
 
 .product__desc {
+  font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
 	text-align: center;
+
 	min-height: 45px;
 	margin: 0;
 	margin-bottom: 10px;
@@ -55,17 +55,9 @@
 	position: absolute;
 	width: 61px;
 	height: 61px;
-	background-image: url(../img/hits/hit-circle.png);
-	z-index: 1;
-}
-
-.product:hover {
-	background-color: var(--transparent-gray-light);
-	border-radius: 3px;
-}
-
-.product:hover .product__button-container{
-	visibility: visible;
+	background-image: url(../../img/hits/hit-circle.png);
+  background-repeat: no-repeat;
+  z-index: 50;
 }
 
 .product__button-container {
@@ -76,12 +68,33 @@
 	position: absolute;
 	left: 0;
 	visibility: hidden;
-	z-index: 1;
 
-	background-color: var(--transparent-gray-light);
 	border-radius: 3px;
 }
 
-.product__button {
-	margin-bottom: 20px;
+
+.product:hover .product__button-container{
+	visibility: visible;
+}
+
+.product:hover .product__button,
+.product:hover .product__image-container,
+.product__desc{
+	z-index: 3;
+}
+
+.product:hover::after {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 0;
+  z-index: 2;
+
+  box-sizing: border-box;
+  padding: 5px 13px 21px 13px;
+  width: 293px;
+  min-height: 402px;
+
+  background-color: var(--transparent-gray-light);
+	border-radius: 3px;
 }

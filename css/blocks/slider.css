@@ -1,7 +1,7 @@
 /* slider */
 .slider {
+  position: relative;
 	text-align: center;
-  z-index: -1;
 }
 
 .slider__desc {
@@ -13,24 +13,59 @@
 	line-height: 60px;
 
 	text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 25px;
+
+  width: 716px;
+
+ margin-top: 275px;
+ text-align: center;
 }
 
 .slider__button {
 	display: inline-block;
 }
 
-.slider__picture {
-  min-height: 750px;
-  min-width: 716px;
-  z-index: -1;
+.slider__option{
+  display: none;
+}
 
 
-  background-image: url(../img/promo/ice-cream-1-left.png), url(../img/promo/ice-cream-1-right.png), url(../img/promo/backlight_new_1.png);
-  background-repeat: no-repeat;
-  background-size: 372px 584px, auto, 750px 750px;
-  background-position: top 190px left 530px , top 260px right 490px, top 75px center;
+.slider__option--active {
+  display: block;
+}
 
-  margin: -260px;
+
+.slider__controls {
+  position: absolute;
+  left:0;
+  bottom: 15px;
+}
+
+.slider__control {
+  box-sizing: border-box;
+  width: 21px;
+  height: 21px;
+
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.slider__control:not(:last-child) {
+  margin-right: 5px;
+}
+
+.slider__control--active {
+  background-color: var(--basic-white);
+}
+
+.slider__control:hover {
+  background-color: var(--transparent-gray-medium);
+}
+
+.slider__control:active {
+  background-color: var(--basic-white);
 }

@@ -6,19 +6,18 @@
 
 	box-sizing: border-box;
 	width: 277px;
-	padding: 20px;
+	padding: 21px;
 
 	background: var(--dark-white);
 	box-shadow: var(--popup-shadow);
 	border-radius: 4px;
 
-	margin-bottom: 10px;
+	z-index: 3;
 }
 
 .login-popup__form{
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 .login-popup__input {
@@ -27,15 +26,15 @@
 
 .login-poup__button  {
 	margin-right: 20px;
+	max-height: 44px;
+  line-height: 16px;
 }
 
 .login-popup__link{
-	margin-bottom: 20px;
+  display: inline-block;
+	line-height: 15px;
+  margin-top: 5px;
 }
 
-.login-popup__link {
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 15px;
-	border-bottom: 1px solid var(--transparent-gray-dark);
-}
+
+

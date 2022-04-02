@@ -22,20 +22,15 @@
 	font-style: bold;
 }
 
-body {
-	font-family: Roboto, sans-serif;
-  background-color: var(--green-theme);
-}
-
 .visually-hidden {
-	display: none;
-}
-
-.page {
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding: 0 27px;
-  margin: 0 auto;
-
-  outline: 2px solid red;
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
