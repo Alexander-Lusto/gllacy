@@ -44,11 +44,21 @@
 
 /* -sorting*/
 .filters__sorting-types {
-	background: var(--basic-white);
+  color: var(--basic-white);
+	background: var(--transparent-gray-light);
 	border-radius: 20px;
 	border: none;
 
 	padding: 10px 15px;
+  cursor: pointer;
+}
+
+.filters__sorting-types option {
+  color: var(--text-dark);
+}
+
+.filters__sorting-types:hover {
+  color: var(--text-dark);
 }
 
 /* -topping*/
@@ -73,6 +83,17 @@
 	cursor: pointer;
 
   align-self: flex-end;
+}
+
+.filters__button:hover {
+  background: var(--basic-white);
+  color: var(--text-dark);
+}
+
+.filters__button:active {
+  background: var(--basic-white);
+  color: var(--text-dark);
+  box-shadow: inset 0px 2px 1px #696969;
 }
 
 /*range-filters*/
@@ -154,20 +175,37 @@
   height: 16px;
   margin-right: 10px;
 
-  border: 4px solid rgba(255, 255, 255, 0.8);;
+  border: 4px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   cursor: pointer;
 }
 
-.filters__radio-option-input:checked + .filters__radio-option-label:after {
+.filters__radio-option-label:after {
   content: "";
+  display: none;
   position: absolute;
   width: 8px;
   height: 8px;
   left: 8px;
 
-  background-color: rgba(255, 255, 255, 0.8);;;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
+}
+
+.filters__radio-option-input:checked + .filters__radio-option-label:after {
+  display: block;
+}
+
+.filters__radio-option-label:hover::after {
+  background-color: var(--basic-white);
+}
+
+.filters__radio-option-label:hover::before {
+  border-color: var(--basic-white);
+}
+
+.filters__radio-option-input:disabled + .filters__radio-option-label::before {
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 /*checkbox */
@@ -197,9 +235,30 @@
   margin-right: 8px;
   background-image: url(../../img/icons/checkbox-off.svg);
   background-repeat: no-repeat;
+  opacity: 0.8;
 }
 
 .filters__checkbox-option-input:checked + .filters__checkbox-option-label:before{
   background-image: url(../../img/icons/checkbox-on.svg);
   background-repeat: no-repeat;
 }
+
+.filters__checkbox-option-input:disabled + .filters__checkbox-option-label:before {
+  opacity: 0.4;
+}
+
+
+
+.filters__checkbox-option-label:hover::before {
+  opacity: 1;
+}
+
+
+.filters__checkbox-option-label:disabled + .filters__checkbox-option-label:before {
+  opacity: 0.4;
+}
+
+.filters__checkbox-option-label:disabled:hover + .filters__checkbox-option-label:before {
+  opacity: 0.4;
+}
+

@@ -62,3 +62,10 @@
   background-color: var(--basic-white);
 }
 
+.slider__control:hover {
+  background-color: var(--transparent-gray-medium);
+}
+
+.slider__control:active {
+  background-color: var(--basic-white);
+}

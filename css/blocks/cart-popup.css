@@ -11,6 +11,29 @@
   width: 540px;
   padding: 20px 15px;
   text-align: right;
+
+}
+
+
+.cart-popup__wrapper {
+  display: none;
+
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  background-color: transparent;
+  padding-top: 20px;
+  z-index: 10;
+}
+
+/* cart hover */
+.header__user-interface-button--cart:hover ~ .cart-popup__wrapper{
+  display: block;
+}
+
+.cart-popup__wrapper:hover{
+  display: block;
 }
 
 .cart-popup__list {
