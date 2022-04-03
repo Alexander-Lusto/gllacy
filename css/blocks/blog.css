@@ -26,6 +26,7 @@
 	line-height: 30px;
 
 	text-decoration: underline;
+  color: var(--text-dark);
 
 	margin: 0;
 }

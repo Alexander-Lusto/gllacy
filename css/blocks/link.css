@@ -7,11 +7,15 @@
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
-	border-bottom: 1px solid var(--transparent-gray-light);
 }
 
-.link:hover,
-.link:active {
+.link__text{
+	border-bottom: 1px solid var(--transparent-gray-light);
+  user-select: none;
+}
+
+.link:hover .link__text,
+.link:active .link__text{
   color: #FFBC9E;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
@@ -21,11 +25,14 @@
   font-weight: 400;
 	font-size: 13px;
 	line-height: 15px;
-	border-bottom: 1px solid var(--transparent-gray-dark);
 }
 
-.link--dark:hover,
-.link--dark:active{
+.link--dark .link__text {
+  border-bottom: 1px solid var(--transparent-gray-dark);
+}
+
+.link--dark:hover .link__text,
+.link--dark:active .link__text{
   color: var(--classic-red);
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }

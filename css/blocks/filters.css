@@ -142,17 +142,15 @@
 
 /* radio */
 .filters__radio {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.filters__radio {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 
   padding: 0 12px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .filters__radio-option-label {
@@ -180,7 +178,7 @@
   cursor: pointer;
 }
 
-.filters__radio-option-label:after {
+.filters__radio-option-label::after {
   content: "";
   display: none;
   position: absolute;
@@ -192,7 +190,7 @@
   border-radius: 50%;
 }
 
-.filters__radio-option-input:checked + .filters__radio-option-label:after {
+.filters__radio-option-input:checked + .filters__radio-option-label::after {
   display: block;
 }
 
@@ -207,6 +205,12 @@
 .filters__radio-option-input:disabled + .filters__radio-option-label::before {
   border-color: rgba(255, 255, 255, 0.4);
 }
+
+
+.filters__radio-option-input:focus-visible + .filters__radio-option-label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 
 /*checkbox */
 .filters__checkbox {
@@ -260,5 +264,9 @@
 
 .filters__checkbox-option-label:disabled:hover + .filters__checkbox-option-label:before {
   opacity: 0.4;
+}
+
+.filters__checkbox-option-input:focus-visible + .filters__checkbox-option-label::before {
+  outline: -webkit-focus-ring-color auto 2px;
 }
 

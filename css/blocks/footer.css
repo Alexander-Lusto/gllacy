@@ -91,6 +91,11 @@
   justify-self: flex-end;
 }
 
+.footer__creator-logo-img {
+  width: 115px;
+  height: 38px;
+}
+
 .footer__creator-info {
 	font-weight: 400;
 	font-size: 12px;
@@ -99,3 +104,5 @@
 
   margin: 0;
 }
+
+
