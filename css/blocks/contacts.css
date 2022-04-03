@@ -6,6 +6,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
+  color: var(--text-dark);
 
 	height: 430px;
 	width: 100%;
@@ -46,12 +47,17 @@
 	line-height: 24px;
 }
 
-.contacts__button {
-	width: 100%;
-}
-
 .contacts__phone strong {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
+}
+
+.contacts__phone-number {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contacts__button {
+	width: 100%;
 }

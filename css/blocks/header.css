@@ -46,8 +46,6 @@
   margin-right: 24px;
 }
 
-
-
 .header__navigation-link {
   font-family: Roboto, sans-serif;
 	font-weight: 700;
@@ -356,12 +354,10 @@
 
 /*breadcrumbs*/
 .header__breadcrumbs {
-  order: 2;
   align-self: flex-end;
 }
 
 .header__info--main {
-  order: 1;
   grid-column-start: 1;
   grid-column-end: -1;
 }

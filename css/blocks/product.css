@@ -34,7 +34,8 @@
 
 }
 
-.product__desc {
+.product__link {
+  display: block;
   font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
@@ -45,7 +46,7 @@
 	margin-bottom: 10px;
 }
 
-.product__desc span {
+.product__link-text {
 	border-bottom: 1px solid var(--transparent-gray-light);
 }
 
@@ -79,7 +80,7 @@
 
 .product:hover .product__button,
 .product:hover .product__image-container,
-.product__desc{
+.product__link{
 	z-index: 3;
 }
 
@@ -97,4 +98,28 @@
 
   background-color: var(--transparent-gray-light);
 	border-radius: 3px;
+}
+
+.product:focus::after {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 0;
+  z-index: 2;
+
+  box-sizing: border-box;
+  padding: 5px 13px 21px 13px;
+  width: 293px;
+  min-height: 402px;
+
+  background-color: var(--transparent-gray-light);
+	border-radius: 3px;
+}
+
+.product:focus .product__button-container{
+	visibility: visible;
+}
+
+.product__button:focus {
+	visibility: visible;
 }
