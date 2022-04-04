@@ -9,7 +9,6 @@
   padding-top: 10px;
 
   z-index: 2;
-  outline: 2px solid red;
 }
 
 /*navigation */
@@ -355,6 +354,7 @@
 /*breadcrumbs*/
 .header__breadcrumbs {
   align-self: flex-end;
+  margin-bottom: 5px;
 }
 
 .header__info--main {

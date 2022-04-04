@@ -62,10 +62,10 @@
   background-color: var(--basic-white);
 }
 
-.slider__control:hover {
+.slider__control:hover:not(.slider__control--active) {
   background-color: var(--transparent-gray-medium);
 }
 
-.slider__control:active {
+.slider__control:active:not(.slider__control--active) {
   background-color: var(--basic-white);
 }
