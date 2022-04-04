@@ -6,8 +6,6 @@
   min-width: 900px;
   padding: 0 27px;
   margin: 0 auto;
-
-  outline: 2px solid red;
 }
 
 .page--brown-theme {
@@ -36,7 +34,6 @@
 }
 
 .page__feedback {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +43,6 @@
 }
 
 .page__wrapper {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;

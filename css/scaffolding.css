@@ -34,3 +34,11 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

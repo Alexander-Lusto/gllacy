@@ -1,6 +1,5 @@
 /* feedback */
 .feedback {
-  position: fixed;
 	font-family: 'Roboto';
 	font-style: normal;
 
@@ -51,8 +50,10 @@
 	display: inline-block;
 	width: 18px;
 	height: 17px;
+  border: none;
 
 	background-image: url(../../img/icons/Х-big.svg);
+  background-position: center;
 	opacity: 0.18;
 	cursor: pointer;
 
