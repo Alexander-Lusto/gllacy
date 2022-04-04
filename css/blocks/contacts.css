@@ -15,6 +15,8 @@
 	background-image:  url(../../img/icons/pin.svg), url(../../img/map.jpg);
   background-repeat: no-repeat;
   background-position: top 140px left 265px, center center;
+
+  position: relative;
 }
 
 .contacts__info {
@@ -23,6 +25,9 @@
 
 	padding: 30px 25px;
 	width: 306px;
+
+  position: absolute;
+  z-index: 3;
 }
 
 .contacts__adress {
@@ -60,4 +65,12 @@
 
 .contacts__button {
 	width: 100%;
+}
+
+.contacts__map {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
