@@ -14,10 +14,16 @@
 	--text-gray-dark: #5A5A5A;
 	--text-gray-light: #999999;
 
-	/*background*/
+	/*page-themes*/
 	--gray-theme: #8996A6;
 	--green-theme: #849D8F;
 	--brown-theme: #9D8B84;
+
+  /*background*/
+  --background-raspberry: #96071B;
+  --background-chocolate: #84675D;
+  --background-map: #EDE4C5;
+  --background-waffle: #F1E8D6;
 
   /*red hues*/
   --classic-red: #E84D37;
@@ -28,6 +34,7 @@
   --hover-red-shadow: 0px 1px 2px #AC1000;
   --hover-big-red-shadow: 0px 2px 2px #AC1000;
   --active-red-shadow: inset 0px 2px 2px #942718;
+  --active-gray-shadow: inset 0px 2px 1px #696969;
 
 
 	/*underline*/

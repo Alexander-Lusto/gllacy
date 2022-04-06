@@ -33,12 +33,12 @@
 }
 
 .bunner--raspberry {
-  background-color: #96071B;
+  background-color: var(--background-raspberry);
 	background-image: url(../../img/rasberry-background.jpg);
 }
 
 .bunner--chockolate {
-  background-color: #84675D;
+  background-color: var(--background-chocolate);
 	background-image: url(../../img/chokolate-background.jpg);
 }
 

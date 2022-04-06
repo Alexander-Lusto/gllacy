@@ -12,7 +12,7 @@
 	width: 100%;
 	padding: 0 27px;
   margin-left: -27px;
-  background-color: #EDE4C5;
+  background-color: var(--background-map);
 	background-image:  url(../../img/icons/pin.svg), url(../../img/map.jpg);
   background-repeat: no-repeat;
   background-position: top 140px left 265px, center center;

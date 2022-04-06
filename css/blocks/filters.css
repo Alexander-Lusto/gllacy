@@ -79,7 +79,7 @@
   height: 36px;
 
 	background: rgba(255, 255, 255, 0.2);
-	border: 2px solid #FFFFFF;
+	border: 2px solid var(--basic-white);
 	color: var(--text-light);
 	border-radius: 20px;
 	cursor: pointer;
@@ -95,7 +95,7 @@
 .filters__button:active {
   background: var(--basic-white);
   color: var(--text-dark);
-  box-shadow: inset 0px 2px 1px #696969;
+  box-shadow: var(--active-gray-shadow);
 }
 
 /* radio */
@@ -224,8 +224,3 @@
 .filters__checkbox-option-label:disabled:hover + .filters__checkbox-option-label:before {
   opacity: 0.4;
 }
-
-.filters__checkbox-option-input:focus-visible + .filters__checkbox-option-label::before {
-  outline: -webkit-focus-ring-color auto 2px;
-}
-
