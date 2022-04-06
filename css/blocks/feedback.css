@@ -1,6 +1,6 @@
 /* feedback */
 .feedback {
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 
 	background: var(--dark-white);
@@ -32,6 +32,7 @@
   width: 100%;
 	max-width: 100%;
 	min-height: 154px;
+  max-height: 154px;
 	margin-bottom: 20px;
 }
 
@@ -47,17 +48,16 @@
 }
 
 .feeedback__close-button {
-	display: inline-block;
 	width: 18px;
 	height: 17px;
   border: none;
+
+  position: absolute;
+	right: 16px;
+	top: 15px;
 
 	background-image: url(../../img/icons/Х-big.svg);
   background-position: center;
 	opacity: 0.18;
 	cursor: pointer;
-
-	position: absolute;
-	right: 16px;
-	top: 15px;
 }

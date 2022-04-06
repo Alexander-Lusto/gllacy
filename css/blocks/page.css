@@ -1,9 +1,9 @@
 .page {
   font-family: Roboto, sans-serif;
+  font-style: normal;
 
   box-sizing: border-box;
-  max-width: 1200px;
-  min-width: 900px;
+  width: 1200px;
   padding: 0 27px;
   margin: 0 auto;
 }

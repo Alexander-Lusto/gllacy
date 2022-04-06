@@ -1,17 +1,18 @@
 /* contacts */
 
 .contacts {
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
   color: var(--text-dark);
 
-	height: 430px;
+	min-height: 430px;
 	width: 100%;
 	padding: 0 27px;
   margin-left: -27px;
+  background-color: #EDE4C5;
 	background-image:  url(../../img/icons/pin.svg), url(../../img/map.jpg);
   background-repeat: no-repeat;
   background-position: top 140px left 265px, center center;
@@ -26,7 +27,6 @@
 	padding: 30px 25px;
 	width: 306px;
 
-  position: absolute;
   z-index: 3;
 }
 
@@ -46,12 +46,6 @@
 	margin-bottom: 30px;
 }
 
-.contacts__adress strong {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 24px;
-}
-
 .contacts__phone strong {
 	font-weight: 700;
 	font-size: 18px;
@@ -64,7 +58,8 @@
 }
 
 .contacts__button {
-	width: 100%;
+  display: block;
+  text-align: center;
 }
 
 .contacts__map {

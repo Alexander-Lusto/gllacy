@@ -1,12 +1,13 @@
 .link {
 	text-decoration: none;
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 	color: var(--text-light);
 
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
+
 }
 
 .link__text{

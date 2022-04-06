@@ -1,18 +1,17 @@
 /* features*/
 .features {
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 
 	border-radius: 10px;
+  background-color: #F1E8D6;
 	background-image: url(../../img/waffle.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 
 	padding: 21.5px 20px;
 }
 
 .features__desc {
-	font-family: 'Roboto';
-	font-style: normal;
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 30px;

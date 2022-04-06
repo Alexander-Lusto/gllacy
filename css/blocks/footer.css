@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 25px;
 
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 	color: var(--text-light);
 
@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -50,9 +51,6 @@
   border-radius: 50%;
 }
 
-
-
-
 /* links */
 .footer__links{
   align-self: center;
@@ -74,14 +72,14 @@
 
 .footer__links-item--first::before {
 	content: "";
-	display: inline-block;
 	width: 15px;
 	height: 13px;
 
-	background-image: url(../../img/icons/heart.svg);
-	position: absolute;
+  position: absolute;
 	left: -20px;
 	top: 3px;
+
+	background-image: url(../../img/icons/heart.svg);
 }
 
 

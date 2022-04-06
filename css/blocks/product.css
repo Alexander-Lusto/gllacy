@@ -4,7 +4,7 @@
   padding-top: 5px;
 
 	color: var(--text-light);
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 
   user-select: none;

@@ -2,38 +2,43 @@
 .bunner {
 	display: flex;
 	flex-direction: column;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+	font-style: normal;
 	color: var(--text-light);
 
   box-sizing: border-box;
-	padding: 16px 16px 22px 16px;
+	padding: 10px 22px 22px 18px;
 	width: 560px;
 	background-size: cover;
 	border-radius: 20px;
 }
 
 .bunner__title {
-	font-family: 'Roboto';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 35px;
 	line-height: 41px;
 
 	margin: 0;
+  margin-bottom: 15px;
 }
 
 .bunner__desc {
-	font-family: 'Roboto';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
+
+  margin: 0;
+  margin-bottom: 45px;
 }
 
 .bunner--raspberry {
+  background-color: #96071B;
 	background-image: url(../../img/rasberry-background.jpg);
 }
 
 .bunner--chockolate {
+  background-color: #84675D;
 	background-image: url(../../img/chokolate-background.jpg);
 }
 
