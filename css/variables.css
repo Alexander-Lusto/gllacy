@@ -13,28 +13,65 @@
   --text-gray: #ABABAB;
 	--text-gray-dark: #5A5A5A;
 	--text-gray-light: #999999;
+  --border-gray: #cacac7;
 
-	/*background*/
+	/*page-themes*/
 	--gray-theme: #8996A6;
 	--green-theme: #849D8F;
 	--brown-theme: #9D8B84;
 
+  /*background*/
+  --background-raspberry: #96071B;
+  --background-chocolate: #84675D;
+  --background-map: #EDE4C5;
+  --background-waffle: #F1E8D6;
+
+
   /*red hues*/
   --classic-red: #E84D37;
 
+  /*menu*/
+  --menu-curent-red: #d07058;
+  --menu-hover-red: #fbded7;
+  --menu-active-red: #f6b5a5;
+  --link-hover-text:  #ffbc9e;
+  --link-hover-border: rgba(255,188,158,.3);
+  --link-dark-border: rgba(232,77,55,.3);
+  --link-background: #ededed;
+
+
+
 	/*button*/
 	--red-linear-gradient: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --red-gradient-min: #F26843;
+  --red-gradient-max: #E74A35;
 	--red-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   --hover-red-shadow: 0px 1px 2px #AC1000;
   --hover-big-red-shadow: 0px 2px 2px #AC1000;
   --active-red-shadow: inset 0px 2px 2px #942718;
+  --active-gray-shadow: inset 0px 2px 1px #696969;
 
 
 	/*underline*/
 	--transparent-gray-light: rgba(255, 255, 255, 0.2);
   --transparent-gray-medium: rgba(255, 255, 255, 0.4);
+  --transparent-gray-half: rgba(255, 255, 255, 0.5);
+  --transparent-gray-high: rgba(255, 255, 255, 0.8);
 	--transparent-gray-dark: rgba(50, 50, 50, 0.2);
+  --transparent-black-light: rgba(0,0,0,0.3);
+  --transparent-black-high: rgba(0,0,0,.07);
 
 	/*popup*/
 	--popup-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+
+  /* new */
+  --button-gradient-max: #e74a35;
+  --button-gradient-min: #f26843;
+
+  /*input*/
+  --input-focus-outline: rgba(46,136,228,.52);
+  --input-hover-outline: rgba(178,178,178,.52);
+  /*range-filter-bar*/
+  --range-filter-scale: rgba(248, 247, 244, 0.5);
+  --range-filter-bar:
 }

@@ -2,12 +2,13 @@
 .slider {
   position: relative;
 	text-align: center;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+	font-style: normal;
+  color: var(--text-light);
 }
 
 .slider__desc {
-	color: var(--text-light);
-	font-family: 'Roboto';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 60px;
@@ -18,12 +19,13 @@
 
   width: 716px;
 
- margin-top: 275px;
- text-align: center;
+  margin-top: 270px;
+  text-align: center;
 }
 
 .slider__button {
 	display: inline-block;
+  vertical-align: middle;
 }
 
 .slider__option{

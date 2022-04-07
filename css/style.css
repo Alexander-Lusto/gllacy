@@ -15,10 +15,12 @@
 @import "blocks/features.css";
 @import "blocks/feedback.css";
 @import "blocks/filters.css";
+@import "blocks/range-filter.css";
 @import "blocks/login-popup.css";
 @import "blocks/mail.css";
 @import "blocks/products.css";
 @import "blocks/product.css";
+@import "blocks/pagination.css";
 @import "blocks/search-form.css";
 @import "blocks/slider.css";
 @import "blocks/content.css";

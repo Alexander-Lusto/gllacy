@@ -9,18 +9,16 @@
 	border-radius: 6px;
 	padding: 11.81px 14px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Arial';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-
   color: var(--text-dark);
 }
 
 .input::placeholder {
-	font-family: 'Roboto';
-	font-style: normal;
+	font-family: inherit;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;

@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Gllacy Каталог</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
@@ -74,10 +74,11 @@
             </svg>
             <span class="user-interface-button__text visually-hidden">Поиск</span>
           </a>
-          <div class="header__search-form-wrapper search-form__wrapper">
+          <div class="header__search-form-wrapper search-form-wrapper">
             <div class="header__search-form search-form">
               <form class="search-form__form">
-                <input class="search-form__input input" type="text" placeholder="Крем брюле" aria-label="Введите товар для поиска">
+                <input class="search-form__input input" type="text" placeholder="Крем брюле"
+                  aria-label="Введите товар для поиска">
               </form>
             </div>
           </div>
@@ -98,8 +99,10 @@
           <div class="header__login-popup-wrapper">
             <div class="header__login-popup login-popup">
               <form class="login-popup__form">
-                <input class="login-popup__input input" type="text" placeholder="email@example.com" aria-label="Введите вашу почту">
-                <input class="login-popup__input input" type="text" placeholder="••••••••" aria-label="Введите ваш пароль">
+                <input class="login-popup__input input" type="text" placeholder="email@example.com"
+                  aria-label="Введите вашу почту">
+                <input class="login-popup__input input" type="text" placeholder="••••••••"
+                  aria-label="Введите ваш пароль">
                 <button class="login-poup__button button" type="submit">Войти</button>
                 <div class="login-popup__link-container">
                   <a class="login-popup__link link link--dark" href="#">
@@ -118,7 +121,8 @@
           </div>
         </li>
         <li class="header__user-interface-item">
-          <a class="header__user-interface-button user-interface-button header__user-interface-button--cart user-interface-button--cart" href="#">
+          <a class="header__user-interface-button user-interface-button header__user-interface-button--cart user-interface-button--cart"
+            href="#">
             <svg class="user-interface-button__icon" width="21" height="20" viewBox="0 0 21 20"
               xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF">
               <path
@@ -131,8 +135,8 @@
             </svg>
             <span class="user-interface-button__text" aria-label="Корзина: 2 товара">2 товара</span>
           </a>
-          <div class="cart-popup__wrapper">
-            <section class="cart-popup">
+          <div class="header__cart-popup-wrapper cart-popup-wrapper">
+            <div class="cart-popup">
               <ul class="cart-popup__list">
                 <li class="cart-popup__item">
                   <div class="cart-popup__desc-container">
@@ -181,7 +185,7 @@
                 Итого: <span class="cart-popup__products-price-number">750</span> руб.
               </p>
               <button class="cart-popup__button button">Оформить заказ</button>
-            </section>
+            </div>
           </div>
         </li>
       </ul>
@@ -208,6 +212,7 @@
     <h1 class="catalog__title">Сливочное мороженое</h1>
 
     <section class="filters">
+      <h2 class="products__headline visually-hidden">Фильтры</h2>
       <form class="filters__form">
         <fieldset class="filters__type filters__sorting ">
           <legend class="filters__name">Сортировка:</legend>
@@ -230,8 +235,9 @@
             <div class="range-filter__scale">
               <div class="range-filter__bar"></div>
             </div>
-            <div class="range-filter__toggle range-filter__toggle-min" tabindex="0"></div>
-            <div class="range-filter__toggle range-filter__toggle-max" tabindex="0"></div>
+            <div class="range-filter__toggle range-filter__toggle-min" aria-label="Минимальная цена" tabindex="0"></div>
+            <div class="range-filter__toggle range-filter__toggle-max" aria-label="Максимальная цена" tabindex="0">
+            </div>
           </div>
         </fieldset>
 
@@ -287,10 +293,12 @@
     </section>
 
     <section class="products">
+      <h2 class="products__headline visually-hidden">Товары</h2>
       <ul class="products__list">
         <li class="products__list-item product ">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/1.png" width="267" height="267" alt="Оранжево-белое апельсиновое мороженное с цитрусовой стружкой">
+            <img class="product__image" src="img/products/1.png" width="267" height="267"
+              alt="Оранжево-белое апельсиновое мороженное с цитрусовой стружкой">
             <p class="product__price">310 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -303,7 +311,8 @@
 
         <li class="products__list-item product ">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/2.png" width="267" height="267" alt="Коричневое кофейное мороженное посыпанное кусочками шоколада">
+            <img class="product__image" src="img/products/2.png" width="267" height="267"
+              alt="Коричневое кофейное мороженное посыпанное кусочками шоколада">
             <p class="product__price">380 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -316,7 +325,8 @@
 
         <li class="products__list-item product ">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/3.png" width="267" height="267" alt="Розовое клубничное мороженое с присыпкой сердечками">
+            <img class="product__image" src="img/products/3.png" width="267" height="267"
+              alt="Розовое клубничное мороженое с присыпкой сердечками">
             <p class="product__price">355 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -329,7 +339,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/4.png" width="267" height="267" alt="Бежевое ванильное мороженое с карамельным соусом">
+            <img class="product__image" src="img/products/4.png" width="267" height="267"
+              alt="Бежевое ванильное мороженое с карамельным соусом">
             <p class="product__price">415 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -342,7 +353,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/5.png" width="267" height="267" alt="Красно-белое брусничное мороженное с джемом">
+            <img class="product__image" src="img/products/5.png" width="267" height="267"
+              alt="Красно-белое брусничное мороженное с джемом">
             <p class="product__price">325 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -355,7 +367,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/6.png" width="267" height="267" alt="Фиолетовое черничное мороженное с ягодами">
+            <img class="product__image" src="img/products/6.png" width="267" height="267"
+              alt="Фиолетовое черничное мороженное с ягодами">
             <p class="product__price">410 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -368,7 +381,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/7.png" width="267" height="267" alt="Жёлтое лимонное мороженное с разноцветной присыпкой">
+            <img class="product__image" src="img/products/7.png" width="267" height="267"
+              alt="Жёлтое лимонное мороженное с разноцветной присыпкой">
             <p class="product__price">375 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -381,7 +395,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/8.png" width="267" height="267" alt="Белое сливочное мороженное посыпанное шоколадной стружкой">
+            <img class="product__image" src="img/products/8.png" width="267" height="267"
+              alt="Белое сливочное мороженное посыпанное шоколадной стружкой">
             <p class="product__price">320 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -394,7 +409,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/9.png" width="267" height="267" alt="Сливочно-ванильное мороженное кремового цвета посыпанное кусочками шоколада">
+            <img class="product__image" src="img/products/9.png" width="267" height="267"
+              alt="Сливочно-ванильное мороженное кремового цвета посыпанное кусочками шоколада">
             <p class="product__price">440 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -407,7 +423,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/10.png" width="267" height="267" alt="Бирюзовое мороженное с ментоловым сиропом">
+            <img class="product__image" src="img/products/10.png" width="267" height="267"
+              alt="Бирюзовое мороженное с ментоловым сиропом">
             <p class="product__price">435 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -420,7 +437,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/11.png" width="267" height="267" alt="Белое сливочное мороженное с кусочками чёрного шоколада">
+            <img class="product__image" src="img/products/11.png" width="267" height="267"
+              alt="Белое сливочное мороженное с кусочками чёрного шоколада">
             <p class="product__price">355 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -433,7 +451,8 @@
 
         <li class="products__list-item product">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/12.png" width="267" height="267" alt="Салатовое мороженное с мятным сиропом">
+            <img class="product__image" src="img/products/12.png" width="267" height="267"
+              alt="Салатовое мороженное с мятным сиропом">
             <p class="product__price">420 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -444,22 +463,23 @@
           </div>
         </li>
       </ul>
-      <div class="products__pagination">
-        <ul class="products__pagination-list">
-          <li class="products__pagination-item products__pagination-item--backward products__pagination-item--disabled" tabindex="0" aria-label="Предыдущая страница">
-            <svg class="products__pagination-icon" width="7" height="12" viewBox="0 0 7 12" fill="white"
+      <div class="products__pagination pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--backward pagination__item--disabled" tabindex="0"
+            aria-label="Предыдущая страница">
+            <svg class="pagination__icon" width="7" height="12" viewBox="0 0 7 12" fill="white"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0.15889 6.34125L6.06761 11.8512C6.1703 11.9465 6.30937 12 6.45436 12C6.59934 12 6.73841 11.9465 6.84111 11.8512C6.89146 11.8048 6.93142 11.7495 6.95869 11.6885C6.98596 11.6276 7 11.5623 7 11.4962C7 11.4302 6.98596 11.3649 6.95869 11.304C6.93142 11.243 6.89146 11.1877 6.84111 11.1412L1.3084 6.00125L6.84111 0.831247C6.89146 0.784766 6.93142 0.729465 6.95869 0.668535C6.98596 0.607606 7 0.542253 7 0.476248C7 0.410242 6.98596 0.344889 6.95869 0.283959C6.93142 0.22303 6.89146 0.167728 6.84111 0.121247C6.73357 0.0364304 6.59506 -0.00654793 6.45436 0.00124741C6.38391 0.000448227 6.31406 0.013381 6.2493 0.0392141C6.18454 0.0650473 6.12631 0.103209 6.07835 0.151247L0.15889 5.63125C0.108543 5.67773 0.0685816 5.73303 0.0413108 5.79396C0.01404 5.85489 0 5.92024 0 5.98625C0 6.05225 0.01404 6.11761 0.0413108 6.17854C0.0685816 6.23947 0.108543 6.29477 0.15889 6.34125Z"
                 fill-opacity="0.2" />
             </svg>
           </li>
-          <li class="products__pagination-item products__pagination-item--active" tabindex="0" aria-label="Первая страница">1</li>
-          <li class="products__pagination-item" tabindex="0" aria-label="Вторая страница">2</li>
-          <li class="products__pagination-item" tabindex="0" aria-label="Третья страница">3</li>
-          <li class="products__pagination-item" tabindex="0" aria-label="Четвёртая страница">4</li>
-          <li class="products__pagination-item" tabindex="0" aria-label="Пятая страница">5</li>
-          <li class="products__pagination-item products__pagination-item--forward" tabindex="0" aria-label="Следующая страница">
+          <li class="pagination__item pagination__item--active" tabindex="0" aria-label="Первая страница">1</li>
+          <li class="pagination__item" tabindex="0" aria-label="Вторая страница">2</li>
+          <li class="pagination__item" tabindex="0" aria-label="Третья страница">3</li>
+          <li class="pagination__item" tabindex="0" aria-label="Четвёртая страница">4</li>
+          <li class="pagination__item" tabindex="0" aria-label="Пятая страница">5</li>
+          <li class="pagination__item pagination__item--forward" tabindex="0" aria-label="Следующая страница">
             <svg class="products__pagination-icon" width="7" height="12" viewBox="0 0 7 12" fill="white"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -532,8 +552,7 @@
       </a>
       <p class="footer__creator-info">
         Сделано в
-        <a class="footer__creator-info-link link" href="https://htmlacademy.ru/intensive/htmlcss"
-          target="new_blank">
+        <a class="footer__creator-info-link link" href="https://htmlacademy.ru/intensive/htmlcss" target="new_blank">
           <span class="link__text">
             HTML Academy
           </span>

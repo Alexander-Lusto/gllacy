@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Gllacy Главная Страница</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
@@ -13,7 +13,6 @@
 </head>
 
 <body class="page page--green-theme">
-
   <header class="header page__header">
     <nav class="header__navigation">
       <a class="header__navigation-logo">
@@ -75,10 +74,11 @@
             </svg>
             <span class="user-interface-button__text visually-hidden" aria-label="Поиск по сайту">Поиск</span>
           </a>
-          <div class="header__search-form-wrapper search-form__wrapper">
+          <div class="header__search-form-wrapper search-form-wrapper">
             <div class="header__search-form search-form">
               <form class="search-form__form">
-                <input class="search-form__input input" type="text" placeholder="Крем брюле" aria-label="Введите товар для поиска">
+                <input class="search-form__input input" type="text" placeholder="Крем брюле"
+                  aria-label="Введите товар для поиска">
               </form>
             </div>
           </div>
@@ -99,8 +99,10 @@
           <div class="header__login-popup-wrapper">
             <div class="header__login-popup login-popup">
               <form class="login-popup__form">
-                <input class="login-popup__input input" type="text" placeholder="email@example.com" aria-label="Введите вашу почту">
-                <input class="login-popup__input input" type="text" placeholder="••••••••" aria-label="Введите ваш пароль">
+                <input class="login-popup__input input" type="text" placeholder="email@example.com"
+                  aria-label="Введите вашу почту">
+                <input class="login-popup__input input" type="text" placeholder="••••••••"
+                  aria-label="Введите ваш пароль">
                 <button class="login-poup__button button" type="submit">Войти</button>
                 <div class="login-popup__link-container">
                   <a class="login-popup__link link link--dark" href="#">
@@ -130,10 +132,10 @@
                 d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" />
               <path d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="transparent" />
             </svg>
-            <span class="user-interface-button__text visually-hidden" aria-label="Корзина">Пусто</span>
+            <span class="user-interface-button__text" aria-label="Корзина">Пусто</span>
           </a>
-          <div class="cart-popup__wrapper">
-            <section class="cart-popup">
+          <div class="header__cart-popup-wrapper cart-popup-wrapper">
+            <div class="cart-popup">
               <ul class="cart-popup__list">
                 <li class="cart-popup__item">
                   <div class="cart-popup__desc-container">
@@ -182,7 +184,7 @@
                 Итого: <span class="cart-popup__products-price-number">750</span> руб.
               </p>
               <button class="cart-popup__button button">Оформить заказ</button>
-            </section>
+            </div>
           </div>
         </li>
       </ul>
@@ -200,16 +202,19 @@
       <h2 class="slider__headline visually-hidden">Предложения</h2>
       <div class="slider__option slider__option-1">
         <p class="slider__desc">Крем-брюле и пломбир<br> с малиновым джемом</p>
-        <a class="slider__button button button--big" href="#" aria-label="Перейти на страницу покупки мороженного"> Давайте оба!</a>
+        <a class="slider__button button button--big" href="#" aria-label="Перейти на страницу покупки мороженного">
+          Давайте оба!</a>
       </div>
       <div class="slider__option slider__option-2">
         <p class="slider__desc">Шоколадный пломбир<br> и лимонный сорбет</p>
-        <a class="slider__button button button--big" href="#" aria-label="Перейти на страницу покупки мороженного"> Давайте оба!</a>
+        <a class="slider__button button button--big" href="#" aria-label="Перейти на страницу покупки мороженного">
+          Давайте оба!</a>
       </div>
       <div class="slider__option slider__option-3 slider__option--active">
         <div class="slider__picture"></div>
         <p class="slider__desc">Пломбир с помадкой <br> и клубничный щербет</p>
-        <a class="slider__button button button--big" href="#" aria-label="Перейти на страницу покупки мороженного"> Давайте оба!</a>
+        <a class="slider__button button button--big" href="#" aria-label="Перейти на страницу покупки мороженного">
+          Давайте оба!</a>
       </div>
       <div class="slider__controls">
         <button class="slider__control slider__control--active" aria-label="Первый слайд"></button>
@@ -223,14 +228,15 @@
       <div class="bunner bunner--raspberry">
         <h3 class="bunner__title">Малинка даром!</h3>
         <p class="bunner__desc">
-          При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+          При покупке 2 кг любого фруктового мороженого, добавим <br>в ваш заказ банку малинового варенья бесплатно.
         </p>
         <a class="bunner__link button" href="#"> Хочу варенье!</a>
       </div>
       <div class="bunner bunner--chockolate">
         <h3 class="bunner__title">Шоколадки даром!</h3>
         <p class="bunner__desc">
-          При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+          При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br> вкуснейшей шоколадной присыпки совершенно
+          бесплатно.
         </p>
         <a class="bunner__link button" href="#"> Хочу шоколадки!</a>
       </div>
@@ -241,7 +247,8 @@
       <ul class="products__list products__list--hits">
         <li class="products__list-item product product--hit">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/1.png" width="267" height="267" alt="Оранжево-белое апельсиновое мороженное с цитрусовой стружкой">
+            <img class="product__image" src="img/products/1.png" width="267" height="267"
+              alt="Оранжево-белое апельсиновое мороженное с цитрусовой стружкой">
             <p class="product__price">310 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -254,7 +261,8 @@
 
         <li class="products__list-item product product--hit">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/2.png" width="267" height="267" alt="Коричневое кофейное мороженное посыпанное кусочками шоколада">
+            <img class="product__image" src="img/products/2.png" width="267" height="267"
+              alt="Коричневое кофейное мороженное посыпанное кусочками шоколада">
             <p class="product__price">380 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -267,7 +275,8 @@
 
         <li class="products__list-item product product--hit">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/3.png" width="267" height="267" alt="Розовое клубничное мороженое с присыпкой сердечками">
+            <img class="product__image" src="img/products/3.png" width="267" height="267"
+              alt="Розовое клубничное мороженое с присыпкой сердечками">
             <p class="product__price">355 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -280,7 +289,8 @@
 
         <li class="products__list-item product product--hit">
           <div class="product__image-container">
-            <img class="product__image" src="img/products/4.png" width="267" height="267" alt="Бежевое ванильное мороженое с карамельным соусом">
+            <img class="product__image" src="img/products/4.png" width="267" height="267"
+              alt="Бежевое ванильное мороженое с карамельным соусом">
             <p class="product__price">415 ₽<span class="product__price-small">/кг</span></p>
           </div>
           <a class="product__link link" href="#" tabindex="0">
@@ -351,7 +361,8 @@
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <form class="mail__form" method="post" action="https://echo.htmlacademy.ru">
-          <input class="mail__input input input" type="text"  aria-label="Напишите вашу почту" placeholder="email@example.com">
+          <input class="mail__input input input" type="text" aria-label="Напишите вашу почту"
+            placeholder="email@example.com">
           <button class="mail__button button" type="submit" aria-label="Подписаться на рассылку">Отправить</button>
         </form>
       </div>
@@ -376,18 +387,24 @@
           <br>
           (с 10 до 20 ежедневно)
         </p>
-        <button class="contacts__button button" type="button">Форма обратной связи</button>
+        <a class="contacts__button button" href="feedback.html" target="new_blank">Форма обратной связи</a>
       </div>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6052928982058!2d30.322824670226833!3d59.938691499714785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1649086898158!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6052928982058!2d30.322824670226833!3d59.938691499714785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1649086898158!5m2!1sru!2sby"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section class="feedback page__feedback hidden">
       <h2 class="feedback__headline visually-hidden">Форма обратной связи</h2>
       <h3 class="feedback__title"> Мы обязательно вам ответим!</h3>
       <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
-        <input class="feedback__input input" type="text" placeholder="Имя Фамилия" aria-label="Напишите ваше имя и фамилию" required>
-        <input class="feedback__input input" type="text" placeholder="email@example.com" aria-label="Напишите вашу почту" required>
-        <textarea class="feedback__textarea input" placeholder="В свободной форме" aria-label="Напишите ваше сообщение" required></textarea>
+        <input class="feedback__input input" name="user-name" type="text" placeholder="Имя Фамилия"
+          aria-label="Напишите ваше имя и фамилию" required>
+        <input class="feedback__input input" name="user-mail" type="mail" placeholder="email@example.com"
+          aria-label="Напишите вашу почту" required>
+        <textarea class="feedback__textarea input" name="user-comment" placeholder="В свободной форме"
+          aria-label="Напишите ваше сообщение" required></textarea>
         <div class="feedback__button-container">
           <button class="feedback__submit-button button" type="submit">Отправить</button>
         </div>
@@ -467,7 +484,7 @@
     </div>
   </footer>
   <div class="page__wrapper hidden"></div>
-  <script src="js/feedback.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
+
 </html>

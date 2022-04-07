@@ -4,7 +4,7 @@
 	text-decoration: none;
 	color: var(--text-light);
 
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
@@ -24,7 +24,11 @@
 	letter-spacing: 0.05em;
   border-radius: 70px;
 
-	padding: 9.5px 21.95px;
+  padding-left: 0;
+  padding-right: 0;
+	/* padding: 9.5px 23px;
+  padding-left: 10px; */
+  min-width: 261px;
 }
 
 .button:hover {
@@ -32,14 +36,16 @@
   box-shadow: var(--hover-red-shadow);
 }
 
+.button:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: var(--active-red-shadow);
+}
+
 .button--big:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   box-shadow: var(--hover-big-red-shadow);
 }
 
-.button:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: var(--active-red-shadow);
-}
+
 
 
